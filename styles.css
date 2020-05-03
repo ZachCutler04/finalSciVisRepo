@@ -126,10 +126,6 @@ body {
   stroke-width:2px;
 }
 
-svg {
-  pointer-events: visible;
-}
-
 #mapTooltip, #scatterplotTooltip, #lineChartTooltip {
 	z-index: 1000;
 	position: absolute;
