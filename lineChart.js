@@ -1,6 +1,6 @@
 // 2. Use the margin convention practice
 import * as d3 from "d3";
-import {updateAll, recreateMap} from '../src/main.js'
+import {updateAll, recreateMap} from './main.js'
 
 export function createLineChart(slcData, denverData, laData, minneapolisData, pmLevel)
 {

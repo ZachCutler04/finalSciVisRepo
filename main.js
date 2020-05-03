@@ -1,6 +1,6 @@
-import {createMap} from '../src/map.js'
-import {createLineChart} from '../src/lineChart.js'
-import {createScatterplot} from '../src/scatterplot.js'
+import {createMap} from './map.js'
+import {createLineChart} from './lineChart.js'
+import {createScatterplot} from './scatterplot.js'
 
 import * as d3 from "d3";
 
@@ -50,10 +50,10 @@ export function recreateMap()
 }
 
 
-d3.json("../data/slc.json").then(function(slcD){
-  d3.json("../data/denver.json").then(function(denverD){
-    d3.json("../data/la.json").then(function(laD){
-      d3.json("../data/minneapolis.json").then(function(minneapolisD){
+d3.json("slc.json").then(function(slcD){
+  d3.json("denver.json").then(function(denverD){
+    d3.json("la.json").then(function(laD){
+      d3.json("minneapolis.json").then(function(minneapolisD){
 
         let listData = [slcD, denverD, laD, minneapolisD];
 
