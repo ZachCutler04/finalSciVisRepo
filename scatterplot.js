@@ -3,11 +3,9 @@ import * as d3 from "d3";
 export function createScatterplot(data, date, latitude, longitude, pmLevel, pmScale, elevationScale)
 {
 
-  console.log(pmScale);
   d3.select("#scatterplot").selectAll('*').remove();
 
   // set the dimensions and margins of the graph
-  console.log(d3.select("#scatterplot").node().clientWidth)
   var margin = {top: 50, right: 50, bottom: 50, left: 50};
   let width = d3.select("#scatterplot").node().clientWidth - margin.left - margin.right;
   let height = d3.select("#scatterplot").node().clientHeight - margin.top - margin.bottom;

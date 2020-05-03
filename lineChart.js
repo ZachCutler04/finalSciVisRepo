@@ -169,7 +169,6 @@ function addLine(svg, line, xScale, yScale, margin, width, height, dataset, data
       .attr("cy", function(d) { return yScale(d) })
       .attr("r", 5)
         .on("click", function(data, i) {
-          console.log(i);
           let monthString = '';
           switch(i){
             case 0:

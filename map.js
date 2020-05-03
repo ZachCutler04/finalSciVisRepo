@@ -2,7 +2,6 @@ import * as d3 from "d3";
 
 export function createMap(data, date, latitude, longitude, pmLevel, totalScale){
 
-  console.log(totalScale)
 
   d3.select("#map").selectAll('*').remove();
 
@@ -94,7 +93,6 @@ export function createMap(data, date, latitude, longitude, pmLevel, totalScale){
                 return colorScale(listOfPm[d]);
             })
             .on('mouseover', (d, i) => {
-              console.log("here")
               d3.select("#mapTooltip").transition().duration(200).style("opacity", .9);
               d3.select("#mapTooltip").html("<h5>Label: " +listOfRealLabels[d] + "<h5>Latitude: " + listOfLat[d].toFixed(2) + "</h5><h5>Longitude: "  + listOfLon[d] +  "</h5><h5>PM: "  + listOfPm[d] +  "</h5>")
                 .style("left", (d3.event.pageX + 14) + "px")
@@ -112,7 +110,6 @@ export function createMap(data, date, latitude, longitude, pmLevel, totalScale){
 
               d3.select("#mapTooltip").transition().duration(200).style("opacity", 0);
             })
-            .on('click', d => console.log(d));
 
         //transforms the markers to the right
         // lat / lng using the projection from google maps

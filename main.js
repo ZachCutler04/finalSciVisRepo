@@ -73,17 +73,12 @@ d3.json("slc.json").then(function(slcD){
                 totalPM10.push(i[j][k]["PM10.0 (ATM)"])
               }
               else{
-                console.log(i[j][k])
                 delete i[j][k]
               }
             }
           }
         }
 
-        console.log(totalElevationScale);
-        console.log(totalPM1);
-        console.log(totalPM2);
-        console.log(totalPM10);
 
         // for(let i = 0; i < totalElevationScale.length; i++)
         // {
@@ -120,8 +115,6 @@ d3.json("slc.json").then(function(slcD){
         //     i--;
         //   }
         // }
-
-        console.log(Math.max(totalPM2))
 
         totalElevationScale = [d3.min(totalElevationScale), d3.max(totalElevationScale)]
         totalPM1 = [d3.min(totalPM1), 100]
