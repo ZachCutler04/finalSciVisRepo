@@ -1,0 +1,28 @@
+{
+  "name": "airquality",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "webpack-dev-server --mode development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoshuaMorrell/AirQuality.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JoshuaMorrell/AirQuality/issues"
+  },
+  "homepage": "https://github.com/JoshuaMorrell/AirQuality#readme",
+  "devDependencies": {
+    "webpack": "^4.43.0"
+  },
+  "dependencies": {
+    "d3": "^5.16.0",
+    "pvw-visualizer": "^3.2.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  }
+}

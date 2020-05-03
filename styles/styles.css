@@ -1,0 +1,154 @@
+#map {
+  position:relative;
+  max-height:45%;
+  max-width:100%;
+  height:100%;
+  margin: 1%;
+}
+
+#lineChart {
+  position:relative;
+  float:left;
+  max-height:45%;
+  max-width:50%;
+  height:50%;
+  width:48.5%;
+
+}
+
+#scatterplot {
+
+  position:relative;
+  float:right;
+  max-height:45%;
+  max-width:50%;
+  height:50%;
+  width:48.5%;
+
+}
+
+.sensors {
+    position: absolute;
+}
+
+.mapNorm {
+  stroke: #333333;
+  stroke-width: 1px;
+  opacity: 1
+}
+
+.hoverMap {
+  r: 7px;
+  stroke-width: 2px;
+  opacity: 1;
+}
+
+.scatterNorm {
+  stroke: #333333;
+  stroke-width: 1px;
+  opacity: .8
+}
+
+.hoverScatter {
+  r:5px;
+  opacity: 1;
+  stroke-width: 2px;
+  stroke: black;
+}
+
+
+
+#dropdownDiv {
+  z-index:100;
+  position:absolute;
+  top:48%;
+  left:5%;
+}
+
+.slcClass{
+  fill:none;
+  stroke:#52BE80;
+}
+
+.laClass{
+  fill:none;
+  stroke:#F1C40F;
+}
+
+.denverClass{
+  fill:none;
+  stroke:#2980B9;
+}
+
+.minneapolisClass{
+  fill:none;
+  stroke:#E74C3C;
+}
+
+.dotslcClass{
+  fill:#52BE80;
+  opacity: .9;
+
+}
+
+.dotlaClass{
+  fill:#F1C40F;
+  opacity: .9;
+}
+.dotdenverClass{
+  fill: #2980B9;
+  opacity: .9;
+
+}
+.dotminneapolisClass{
+  fill:#E74C3C;
+  opacity: .9;
+
+}
+.sensors svg {
+    width: 30px;
+    height: 30px;
+    font: 10px sans-serif;
+    position: absolute;
+}
+/* Optional: Makes the sample page fill the window. */
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.selectedDot{
+  r: 7px;
+  opacity: 1;
+  stroke: #333333;
+  stroke-width:2px;
+}
+
+svg {
+  pointer-events: visible;
+}
+
+#mapTooltip, #scatterplotTooltip, #lineChartTooltip {
+	z-index: 1000;
+	position: absolute;
+	text-align: center;
+	margin: 2px;
+	margin-bottom: 0px;
+	font: 12px sans-serif;
+	background: lightsteelblue;
+	border: 1px;
+	border-radius: 2px;
+	pointer-events: none;
+
+	background:rgba(0,0,0,0.9);
+	border:1px solid grey;
+	border-radius:5px;
+	max-width:400px;
+	width:auto;
+	padding:4px;
+	padding-bottom: 0px;
+	color:white;
+	opacity:0;
+}

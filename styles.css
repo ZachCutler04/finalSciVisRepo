@@ -1,0 +1,56 @@
+#map {
+  max-height:800px;
+  max-width:800px;
+  height:100%;
+}
+
+.sensors {
+    position: absolute;
+}
+
+.slcClass{
+  fill:none;
+  stroke:#2980B9;
+}
+
+.laClass{
+  fill:none;
+  stroke:#E74C3C;
+}
+
+.denverClass{
+  fill:none;
+  stroke:#52BE80;
+}
+
+.minneapolisClass{
+  fill:none;
+  stroke:#F1C40F;
+}
+
+.dotslcClass{
+  fill:#2980B9;
+}
+
+.dotlaClass{
+  fill:#E74C3C;
+}
+.dotdenverClass{
+  fill:#52BE80;
+}
+.dotminneapolisClass{
+  fill:#F1C40F;
+}
+.sensors svg {
+    width: 60px;
+    height: 20px;
+    font: 10px sans-serif;
+    position: absolute;
+}
+/* Optional: Makes the sample page fill the window. */
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}

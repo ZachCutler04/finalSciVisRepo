@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Air Quality</title>
+		<link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/bulma.css">
+  </head>
+  <body>
+
+    <div class= "select is-small" id='dropdownDiv'>
+      <select id='pdLevel'>
+        <option value="PM1.0 (ATM)">PM 1.0</option>
+        <option value="PM2.5 (ATM)" selected>PM 2.5</option>
+        <option value="PM10.0 (ATM)">PM 10.0</option>
+      </select>
+    </div>
+
+    <div id="map"></div>
+
+    <div id="lineChart"></div>
+    <div id="scatterplot"></div>
+
+    <div id ="mapTooltip"></div>
+    <div id ="lineChartTooltip"></div>
+    <div id ="scatterplotTooltip"></div>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDWNhA-rVGoeMhPy5iUWkYklNvxp5nuEbA"></script>
+    <script type="module" src="./bundle.js" crossorigin="anonymous"></script>
+  </body>
+</html>
