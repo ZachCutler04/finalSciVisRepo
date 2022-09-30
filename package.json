@@ -20,7 +20,7 @@
     "webpack": "^4.43.0"
   },
   "dependencies": {
-    "d3": "^5.16.0",
+    "d3": "^7.6.1",
     "pvw-visualizer": "^3.2.0",
     "webpack-cli": "^3.3.11",
     "webpack-dev-server": "^3.10.3"
